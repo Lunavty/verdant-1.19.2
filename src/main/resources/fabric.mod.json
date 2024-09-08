@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "verdant",
+	"version": "${version}",
+	"name": "Verdant",
+	"description": "Adding flowery additions!",
+	"authors": [
+		"Lunavty"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/verdant/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.verdant.Verdant"
+		],
+		"client": [
+			"com.verdant.VerdantClient"
+		],
+		"fabric-datagen": [
+			"com.verdant.VerdantDataGenerator"
+		]
+	},
+	"mixins": [
+		"verdant.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.4",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
